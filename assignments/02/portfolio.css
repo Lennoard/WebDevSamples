@@ -1,0 +1,25 @@
+body {
+  background-color: #6002ee;
+  padding: 64px;
+  margin: 0;
+  font-size: 150%;
+}
+
+h1, h2, h3, h4 {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+a {
+  color: #90ee02;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+}
