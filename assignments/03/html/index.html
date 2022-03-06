@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melhores práticas | HTML</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../bestpractices.css">
+</head>
+
+<body>
+  <h1>Melhores práticas - HTML</h1>
+  <nav>
+    <ul>
+      <li><a href="#semantic-html">Usar HTML semântico</a></li>
+      <li><a href="#mix-css">Não misturar CSS com HTML</a></li>
+      <li><a href="#close-tags">Fechar tags</a></li>
+    </ul>
+  </nav>
+
+  <div class="divider" />
+
+  <main>
+    <h2 id="semantic-html">Usar HTML semântico</h2>
+    <p>
+      Usar as tags mais espefícas do HTML para as ocasiões específicas.
+      Nem todo bloco de conteúdo precisa ser necessariamente uma <code>div</code>.
+    </p>
+    <p>
+      Exemplos de tags estruturais: <code>main</code>, <code>section</code>,
+      <code>aside</code>, <code>nav</code>, <code>header</code>,
+      <code>footer</code>, <code>article</code>.
+    </p>
+
+    <h4 class="green-text">Correto</h4>
+    <div class="code-block">
+      &lt;footer&gt;<br>
+      &nbsp;&lt;p&gt;Copyright &copy; DCC Digital LTDA.&lt;/p&gt;<br>
+      &lt;/footer&gt;<br>
+    </div>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      &lt;div class="footer"&gt;<br>
+      &nbsp;&lt;p&gt;Copyright &copy; DCC Digital LTDA.&lt;/p&gt;<br>
+      &lt;/div&gt;<br>
+    </div>
+
+    <h2 id="mix-css">Não misturar CSS com HTML</h2>
+    <p>
+      Idealmente deve-se usar css apenas no(s) seu(s) arquivos separados. Isso ajuda
+      a leitura e manutenção futura do código por outros desenvolvedores.
+    </p>
+
+    <h4 class="green-text">Correto</h4>
+    <div class="code-block">
+      &lt;link rel="stylesheet" href="extras.css"&gt;<br>
+      &lt;p class="red"&gt;Texto estilizado&lt;/p&gt;<br>
+    </div>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      &lt;p style="color: #FF9800; display: inline;"&gt;<br>
+    </div>
+
+    <h2 id="close-tags">Fechar tags</h2>
+    <p>
+      Todas as tags que não têm conteúdo interno devem ser fechadas.
+      O motivo de funcionar sem o fechamento é que alguns navegadores são 
+      mais inteligentes que outros e fecharam as tags correspondentes equanto a 
+      página é carregada
+    </p>
+
+    <h4 class="green-text">Correto</h4>
+    <div class="code-block">
+      &lt;p&gt;&lt;abbr title="Bitcoin"&gt;BTC&lt;/abbr&gt;&lt;/p&gt;
+    </div>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      &lt;p&gt;&lt;abbr title="Bitcoin"&gt;BTC&lt;/p&gt;
+    </div>
+
+  </main>
+
+</body>
+
+</html>

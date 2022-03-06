@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  padding: 3%;
+}
+
+div.divider {
+  margin: 64px 0;
+  border-top: 1px solid #9E9E9E;
+}
+
+main {
+  margin-top: 48px;
+}
+
+.code-block {
+  background-color: gainsboro;
+  font-family: monospace;
+  border-left: 3px solid blueviolet;
+  padding-left: 8px;
+}
+
+.green-text {
+  color: green;
+}
+
+.red-text {
+  color: red;
+}

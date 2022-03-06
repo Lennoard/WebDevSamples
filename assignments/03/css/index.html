@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melhores práticas | CSS</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../bestpractices.css">
+</head>
+
+<body>
+  <h1>Melhores práticas - CSS</h1>
+  <nav>
+    <ul>
+      <li><a href="#same-file">Não colocar tudo em um único arquivo</a></li>
+      <li><a href="#combine">Combinar estilos semelhantes com vírgula</a></li>
+      <li><a href="#important">Não usar !important</a></li>
+    </ul>
+  </nav>
+
+  <div class="divider" />
+
+  <main>
+    <h2 id="same file">Não colocar tudo em um único arquivo</h2>
+    <p>
+      Colocar todas as regras de estilo em um único arquivo pode economizar 
+      banda de rede mas introduz desafios de manutenção.
+    </p>
+
+    <h4 class="green-text">Correto</h4>
+    <div class="code-block">
+      &lt;link rel="stylesheet" href="main.css"&gt;<br>
+      &lt;link rel="stylesheet" href="slideshow.css"&gt;<br>
+      &lt;link rel="stylesheet" href="parallax.css"&gt;<br>
+    </div>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      &lt;link rel="stylesheet" href="css.css"&gt;<br>
+    </div>
+
+    <h2 id="combine">Combinar estilos semelhantes com vírgula</h2>
+    <p>
+      Se os estilhos forem semelhantes o suficientes é legal combinálos em um 
+      único seletor, isso pouca tempo de carregamento
+    </p>
+
+    <h4 class="green-text">Correto</h4>
+    <div class="code-block">
+      h1, h2, h3, h4, h5, h6 {<br>
+        &nbsp;color: black;<br>
+        &nbsp;font-family: monospace;<br>
+      }<br><br>
+      h2.lead {<br>
+        &nbsp;text-decoration: underline;<br>
+      }
+    </div>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      h1, h2, h3, h4, h5, h6 {<br>
+        &nbsp;color: black;<br>
+        &nbsp;font-family: monospace;<br>
+      }<br><br>
+      h2.lead {<br>
+        &nbsp;color: black;<br>
+        &nbsp;text-decoration: underline;<br>
+        &nbsp;font-family: monospace;<br>
+      }
+    </div>
+
+    <h2 id="important">Não usar !important</h2>
+    <p>
+      O uso da flag !important normalmente indica que há algo de errado 
+      com a hierarquia dos estilos ou está sendo usado um framework em que 
+      não é muito fácil a substituição dos estilos. Em todo caso, há soluções 
+      aplicáveis.
+    </p>
+
+    <h4 class="red-text">Errado</h4>
+    <div class="code-block">
+      h4 {<br>
+        &nbsp;color: black<br>
+      }<br><br>
+      #primary-container h4.primary {<br>
+        &nbsp;color: red!important;<br>
+      }
+    </div>
+
+  </main>
+
+</body>
+
+</html>

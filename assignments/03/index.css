@@ -1,0 +1,38 @@
+main {
+  display: flex;
+  flex-direction: row;
+  font-family: sans-serif;
+}
+
+main a {  
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+main a section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+
+main a section div {
+  align-self: center;
+  text-align: center;
+}
+
+.orange {
+  background-color: #E38812;
+}
+
+.blue {
+  background-color: #1288FF;
+}
+
+.black-text {
+  color: rgba(0, 0, 0, .8);
+}
+
+.white-text {
+  color: rgba(255, 255, 255, .8);
+}
