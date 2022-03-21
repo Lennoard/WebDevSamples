@@ -11,7 +11,8 @@ nav {
 }
 
 nav h3 {
-  font-family: cursive;
+  font-family: 'Billabong', sans-serif;
+  font-size: 150%;
   flex-grow: 1;
 }
 
