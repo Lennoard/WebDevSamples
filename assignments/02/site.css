@@ -16,3 +16,27 @@ p {
   text-align: justify; 
   font-family: "Times New Roman", serif;
 }
+
+blockquote {
+  background-color: #D9E5E3;
+}
+
+aside {
+  background-color: #3C1D3D;
+  color: #F2FFFC;
+  font-family: 'Open Sans Condensed';
+}
+
+footer {
+  background-color: black;
+  color: #F2FFFC;
+}
+
+nav a {
+  color: inherit;
+}
+
+main a {
+  color: #851944;
+  font-family: 'Open Sans Condensed';
+}
