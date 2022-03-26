@@ -1,0 +1,44 @@
+header, footer {
+  background-color: #bcce98;
+  padding: 8px;
+}
+
+header p,
+h4 {
+  margin-bottom: 28px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 16px;
+}
+footer p {
+  margin: 0;
+}
+
+main h3 {
+  font-weight: bold;
+}
+
+main,
+aside {
+  padding: 8px;
+}
+
+aside.first {
+  background-color: #f7fdeb;
+}
+
+aside.second {
+  background-color: #dae9bc;
+}
+
+aside.second a {
+  text-decoration: none;
+  color: #30812a;
+}
+
+aside.second ul {
+  list-style: none;
+}

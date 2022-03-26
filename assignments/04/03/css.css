@@ -1,0 +1,20 @@
+nav {
+  background-color: #292b2c;
+}
+
+nav .nav-link {
+  color: white;
+}
+
+nav .nav-link.active {
+  font-size: 115%;
+}
+
+h1 {
+  font-size: 500%;
+}
+
+.header-container {
+  padding: 64px 3%;
+  background-color: #eceeef;
+}
