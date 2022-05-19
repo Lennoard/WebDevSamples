@@ -1,5 +1,5 @@
 # CodeX
-[CodeX](https://github.com/Jaagrav/CodeX) uma forma automatizada de obter os dados de negociações do Mercado Bitcoin, em geral de uso de desenvolvedores de software que desejam integrar essas informações a outros sistemas.
+[CodeX](https://github.com/Jaagrav/CodeX) CodeX é um compilador online para várias linguagens como Java, C++, Python, etc. Não há necessidade de cadastro para executar e salvar seu código. Cada código salva e atualiza automaticamente em tempo real.
   
 ### Linguagens aceitas
 - C++
