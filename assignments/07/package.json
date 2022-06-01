@@ -10,6 +10,8 @@
   "author": "Lennoard",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.1"
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "requirejs": "^2.3.6"
   }
 }

@@ -11,3 +11,7 @@ $RECYCLE.BIN/
 
 # Node
 node_modules/
+
+
+*service-account-file.json
+assignments/07/serviceAccountKey.json

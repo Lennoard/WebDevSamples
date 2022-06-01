@@ -1,11 +1,15 @@
 var axios = require('axios');
 var data = JSON.stringify({
-  "code": `public class program {
-            public static void main(String [] args) {
-              System.out.println(5+5+6);
-            }
-          }`,
-  "language": "java",
+  "code": `
+  fun main() {
+    val text = buildString {
+      append("preço: ")
+      append(450000)
+    }
+    print(text)
+  }
+  `,
+  "language": "kt",
   "input": ""
 });
 
