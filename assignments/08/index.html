@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="expense.js"></script>
+  <script src="index.js"></script>
+
+  <title>API Fetch</title>
+</head>
+<body class="grey lighten-4">
+  <main class="container white">
+    <div class="row">
+  
+      <section class="col s12 m6">
+        <h3 class="black-text">Criar despesa</h3>
+        <form>
+          <br>
+          <div class="input-field">
+            <i class="material-icons prefix">attach_money</i>
+            <input id="value" type="number" type='number' step='0.01' value='0.00' class="validate" min="0">
+            <label for="value">Valor</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">edit</i>
+            <input id="description" type="text" class="validate" min="0">
+            <label for="description">Descrição</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">calendar_month</i>
+            <input id="date" type="date" class="validate" min="0">
+            <label for="date">Data</label>
+          </div>
+          <p style="margin: 24px 6px">
+            <label>
+              <input id="ignore" type="checkbox" class="filled-in" />
+              <span class="black-text">Ignorar despesa</span>
+            </label>
+          </p>
+
+          <a id="submit" class="btn waves-effect">Enviar</a>
+          <br><br><br>
+        </form>
+      </section>
+
+      <section class="col s12 m6">
+        <h3 class="black-text">Despesas</h3>
+
+        <ul id="expense-container" class="collection">
+          
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
